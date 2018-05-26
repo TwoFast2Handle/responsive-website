@@ -1,0 +1,53 @@
+
+
+
+
+.content {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.weather, .scores {
+  order: 5;
+}
+
+
+@media and screen and (max-width:549px){
+  header, nav, footer, section, article, div {
+  }
+
+  .nav {
+    z-index: 5;
+    width: 500px;
+    position: absolute;
+    -webkit-transform: translate(-500px,0)
+    transform: translate (-500px, 0);
+    transition: transform 0.3s ease;
+  }
+}
+@media and screen and (min-width:550px){
+  .weather {
+    order: 4;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+
+  }
+  .scores {
+    order: 5;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+
+  }
+@media and screen and (min-width:650px){
+  .hero, .top-news{
+    width:50%;
+  }
+  .weather, .scores {
+    width: 50%;
+  }
+}
